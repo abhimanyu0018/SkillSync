@@ -55,7 +55,7 @@ npm install
 ```
 - Start the backend server: 
 ```
-npm start
+npm run dev
 ```
 > [!CAUTION]
 > Don't forget to add .env file in both client and server.
