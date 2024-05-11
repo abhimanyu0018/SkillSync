@@ -63,5 +63,5 @@ npm run dev
 ## Contributors
 - [Abhimanyu Kanaujia](https://github.com/abhimanyu0018)
 - [Srijan Agarwal](https://github.com/Srijan8899)
-## License
-This project is licensed under the [MIT License](https://github.com/abhimanyu0018/SkillSync/blob/main/LICENSE).
+  
+---
