@@ -51,9 +51,8 @@ export const signupUser = asyncHandler( async (req,res) => {
 
         res.status(200).json({email,role: user.role,firstName: user.firstName,lastName: user.lastName, token})
     } catch (error) {
-        res.status(400).json({
-            error: error.message
-        })
+        console.log(error);
+        return res.status(500).json({ error: error });
     }
    
 

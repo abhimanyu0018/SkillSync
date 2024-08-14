@@ -24,7 +24,6 @@ const LoginPage = () => {
     }));
   }
   const navigation = useNavigate();
-  
 
   const submitHandler = async (event) => {
     event.preventDefault();
@@ -38,7 +37,7 @@ const LoginPage = () => {
         body: JSON.stringify(formData),
       });
       const data = await response.json();
-      const UserName = `${data.firstName} ${data.lastName}`
+      const UserName = `${data.firstName} ${data.lastName}`;
       if (response.ok) {
         // Handle successful login
         login(data.token, data.email, data.role, UserName);

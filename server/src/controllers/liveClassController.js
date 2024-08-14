@@ -1,4 +1,5 @@
 import {Course} from "../models/course.model.js"
+import { User } from "../models/user.model.js";
 import nodemailer from "nodemailer"
 
 
@@ -24,12 +25,13 @@ export const startLiveSession = async (req, res) => {
         await course.save();
 
          // Send notification email to enrolled students
-         const enrolledStudentsEmails = await getEnrolledStudentsEmails(course);
-         await sendNotificationEmail(enrolledStudentsEmails, notificationMessage);
-         console.log(notificationMessage)
+        //  const enrolledStudentsEmails = await getEnrolledStudentsEmails(course);
+        //  await sendNotificationEmail(enrolledStudentsEmails, notificationMessage);
+        //  console.log(notificationMessage)
 
         return res.status(200).json({ success: true, course });
     } catch (error) {
+        console.log(error);
         return res.status(500).json({ success: false, error: error.message });
     }
 };
