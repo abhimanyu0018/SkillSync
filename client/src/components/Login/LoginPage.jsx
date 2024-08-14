@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import loginImg from "../../imageAssets/loginImage.jpg";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
@@ -16,6 +16,20 @@ const LoginPage = () => {
   const { setIsLoggedIn, login } = useContext(AuthContext);
 
   const [showPassword, setShowPassword] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      alert(
+        "Try out the app using these test accounts:\n\n" +
+          "Teacher Account:\n" +
+          "Email: teacher@gmail.com\n" +
+          "Password: 12345\n\n" +
+          "Student Account:\n" +
+          "Email: student@gmail.com\n" +
+          "Password: 12345"
+      );
+    }, 500);
+  }, []);
 
   function changeHandler(event) {
     setFormData((prevData) => ({
