@@ -17,6 +17,7 @@ const LoginPage = () => {
 
   const [showPassword, setShowPassword] = useState(false);
 
+  // alert for test options
   useEffect(() => {
     setTimeout(() => {
       alert(
