@@ -26,7 +26,7 @@ This project addresses the prevailing gap in traditional e-learning platforms by
 ## Deployment :-
 The frontend of SkillSync is deployed on Vercel, while the backend is deployed on Render, ensuring seamless accessibility and performance for users.
 
-#### Check out Live - [SkillSync](https://skill-sync-kappa.vercel.app/)
+#### Check out Live - [SkillSync](https://skill-sync-steel.vercel.app/)
 
 ## How to Run Locally :-
 - Clone the repository: 
